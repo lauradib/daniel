@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f3f3f3;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+}
+
+.bolo {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.hidden {
+    display: none;
+}
+
+.error-message {
+    color: red;
+}
+
+.explosao {
+    width: 100%;
+    max-width: 300px; 
+    height: auto;
+    display: block; 
+    margin: 0 auto;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.photos img {
+    width: 200px;
+    height: auto;
+    margin: 10px;
+}
+
+@media (max-width: 600px) {
+    .bolo {
+        max-width: 150px;
+    }
+    
+    .explosao {
+        max-width: 200px;
+    }
+    
+    .photos img {
+        width: 80px;
+        margin: 5px;
+    }
+}
+
+h2 {
+    font-family: Arial, sans-serif;
+    font-size: 24px;
+    animation: colorChange 5s infinite; 
+    display: flex;
+    justify-content: center;
+}
+
+/* Definindo a animação colorChange */
+@keyframes colorChange {
+    0% {
+        color: #f700ff; /* Cor inicial */
+    }
+    50% {
+        color: #0011f8; /* Primeira cor de mudança */
+    }
+    100% {
+        color: #9c00f7; /* Segunda cor de mudança */
+    }
+}

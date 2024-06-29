@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversário</title>
+    <link rel="stylesheet" href="style/inedx.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Feliz Aniversário!</h1>
+        <img src="image/cake_24dp_FILL0_wght400_GRAD0_opsz24.png" alt="Bolo de Aniversário" class="bolo">
+        <form id="nameForm">
+            <label for="name">Digite o seu nome:</label>
+            <input type="text" id="name" name="name" required>
+            <button type="submit">Entrar</button>
+        </form>
+        <p id="errorMessage" class="error-message"></p>
+    </div>
+    <div id="explosion" class="hidden">
+        <img src="image/explosao.gif" alt="Explosão" class="explosao">
+        <div class="photos">
+            <img src="image/daniel1.png" alt="Foto 1">
+            <img src="image/daneil2.png" alt="Foto 2">
+            <img src="image/daniel3.png" alt="Foto 3">
+            <img src="image/daneil4.png" alt="Foto 2">
+            <img src="image/daniel5.png" alt="Foto 3">
+        </div>
+        <h2 class="d-flex justify-content-center">É o seu aniversário.</h2>
+    </div>
+    <script src="js/index.js"></script>
+</body>
+</html>
